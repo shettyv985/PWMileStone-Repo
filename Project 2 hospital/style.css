@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+#firstdiv {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("./assets/background.png") no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav h3 {
+    margin-left: -13%;
+    cursor: pointer;
+}
+
+#get {
+    font-size: 100%;
+    padding: 2%;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: skyblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#centre {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+
+#left {
+    height: 85%;
+    width: 50%;
+    color: aliceblue;
+    padding: 10%;
+    justify-content: center;
+}
+
+#left h1 {
+    font-size: 60px;
+    margin-bottom: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#left h6 {
+    font-size: 20px;
+    margin-bottom: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.get{width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+
+#learn {width: fit-content;
+    margin-top: 1%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#right {
+    height: 85%;
+    width: 50%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right form {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2% 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#right form h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#right form div {
+    margin-bottom: 10px;
+}
+
+#right form label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 3.5px;
+    display: block;
+}
+
+#right form input, #right form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#right form .full-width {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#right form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#right form button:hover {
+    background-color: #0056b3;
+}
+
+#secdiv{
+    height: 100%;
+    width: 100%;
+}
+
+.top{
+    height: 20%;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.top h1,p{padding-bottom:2.5%;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+.bottom{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    padding: 5%;
+}
+
+.card{height: 100%;
+    width: 50%;
+    background: linear-gradient(to bottom, #3498db 10%, transparent 30%);
+    margin: 2%;
+    color: antiquewhite;
+    display: flex;
+    padding: 2.5%;
+    font-size: 30px;
+    border-radius: 5%;
+    flex-wrap: wrap;
+    border: 0.5px solid #3498db;
+}
+
+.card li{text-align: left;
+    list-style-type: none;
+    color: black;
+    font-size: 20px;
+    padding: 3%;
+}
+
+.card h5{
+    margin-bottom: 12%;
+}
+
+.card p{font-size: 20px;
+    color: #3498db ;
+    text-align: left;
+
+}
+
+.thirdcard{
+    height: 100%;
+    width: 100%;
+    margin: 2%;
+    color: antiquewhite;
+    padding: 2.5%;
+    font-size: 30px;
+    border-radius: 5%;
+    border: 0.5px solid #dfcd99;
+}
+
+.thirdcard p{text-align: left;
+    list-style-type: none;
+    color: black;
+    font-size: 20px;
+    padding-top: 5%;
+    margin-bottom: 10%;
+}
+
+.thirdcard img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.bottom4{
+    height: 100%;
+    width: 80%;
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: 30% 30% 30%;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.bottom5 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+.card5 {
+    width: 50%;
+    margin: 1%;
+    color: rgb(5, 7, 71);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+    border-radius: 10px;
+    border: 1px solid #3498db;    
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card5 h5 {font-weight: 900;
+    font-size: 28px;
+    margin: 10% 0;
+    text-align: center;
+}
+
+.card5 li {
+    text-align: left;
+    list-style-type: none;
+    font-size: 18px;
+    padding: 3%;
+}
+
+.card5 button {
+    margin-top: auto;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card5 p{
+    font-size: 20px;
+}
+
+.card5 button:hover {
+    background-color: rgb(5, 7, 71);
+}
+
+.card5:hover {
+    transform: scale(1.05);
+    background-color: rgb(5, 7, 71);
+    color: white;
+}
+
+
+.contact-header {
+    background-color: #273b60;
+    color: white;
+    text-align: center;
+    padding: 50px 150px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-header h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    
+    width: 300px;
+    max-width: 80%;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #2980b9;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    text-align: left;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.column h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.column ul li a:hover {
+    color: #3498db;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+    font-size: 1.5em;
+}

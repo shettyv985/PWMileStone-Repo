@@ -1,0 +1,846 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    padding: 5%;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-icon ,#user{display: none;}
+
+#logo{
+    margin-right: -9%;
+}
+
+nav h3 {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav h3:hover {
+    color: #fa7203;
+}
+
+nav button {
+    padding: 1.5% 3%;
+    
+    color: #070202;
+   
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #fa7203;
+}
+
+section {
+    height: 65%;
+    width: 100%;
+    display: flex;
+}
+
+#section-left {
+    height: 100%;
+    width: 60%;
+    padding: 4%;
+    position: relative;
+}
+
+#section-left h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 3%;
+}
+
+#section-left h2 {
+    padding-left: 2%;
+    border-left: 3px solid black;
+    margin: 3%;
+}
+
+#section-left button {
+    padding: 2% 3%;
+    margin: 2%;
+    background-color: #fa7203;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#section-left button:hover {
+    background-color: #555;
+}
+
+#section-right {
+    height: 100%;
+    width: 40%;
+    padding: 2%;
+    position: relative;
+}
+
+#ptrn {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+#image {
+    position: absolute;
+    left: 115px;
+    height: 80%;
+    top: 115px;
+    border-radius: 20%;
+    padding-bottom: 1.5%;
+    transition: transform 0.3s ease;
+}
+
+#image:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 7%;
+    height: 45%;
+    width: 100%;
+    display: grid;
+    background-color: rgb(22, 26, 87);
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#text {
+    padding: 15%;
+    color: #fff;
+}
+
+#text h1 {
+    text-transform: uppercase;
+    margin-bottom: 7%;
+}
+
+#exptr {
+    padding: 20%;
+    color: #fff;
+}
+
+#exptr h3 {
+    text-transform: uppercase;
+    margin-bottom: 7%;
+}
+
+#expt {
+    height: 30%;
+    width: 20%;
+    padding: 3%;
+    object-fit: contain;
+    border-radius: 30%;
+    background-color: aqua;
+    margin-bottom: 7%;
+    transition: background-color 0.3s ease;
+}
+
+#expt:hover {
+    background-color: #00d9d9;
+}
+
+#bulbs {
+    padding: 20%;
+    color: #fff;
+}
+
+#bulbs h3 {
+    text-transform: uppercase;
+    margin-bottom: 7%;
+}
+
+#bulb {
+    height: 30%;
+    width: 20%;
+    padding: 3%;
+    object-fit: contain;
+    border-radius: 30%;
+    background-color: rgb(255, 60, 0);
+    margin-bottom: 7%;
+    transition: background-color 0.3s ease;
+}
+
+#bulb:hover {
+    background-color: #ff2a00;
+}
+
+#hrs {
+    padding: 20%;
+    color: #fff;
+}
+
+#hrs h3 {
+    text-transform: uppercase;
+    margin-bottom: 7%;
+}
+
+#hhrs {
+    height: 30%;
+    width: 20%;
+    padding: 3%;
+    object-fit: contain;
+    border-radius: 30%;
+    background-color: purple;
+    margin-bottom: 7%;
+    transition: background-color 0.3s ease;
+}
+
+#hhrs:hover {
+    background-color: #a020f0;
+}
+
+#orange{position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+}
+
+#green{position: absolute;
+    height: 30px;
+    width: 30px;
+    top:90%;
+    left: 55%;
+}
+
+#curve{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top:70%;
+    left: 35%;
+}
+
+#circle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 95%;
+    top:80%;
+}
+
+@media only screen and (max-width: 430px) {
+    nav {
+        margin: 5%;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        margin-right: -80px;
+    }
+
+    #menu-icon, #user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #user {
+        border-radius: 50%;
+        margin-right: -15%;
+    }
+
+    nav h3, nav button {
+        display: none;
+    }
+
+    section {
+        height: 130%;
+        width: 100%;
+        display: block;
+    }
+
+    #section-left {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    #section-left h1 {
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-bottom: 6%;
+    }
+
+    #section-left h2 {
+        padding-left: 2%;
+        border-left: 3px solid black;
+        margin: 3%;
+    }
+
+    #button {
+        margin-top: 140%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20%;
+    }
+
+    #section-left button {
+        padding: 4% 8%;
+        margin-top: 80%;
+        font-size: 16px;
+        background-color: #fa7203;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #section-left button:hover {
+        background-color: #555;
+    }
+
+    #section-right {
+        margin-top: 15%;
+        height: 100%;
+        width: 100%;
+        padding: 5%;
+        position: relative;
+    }
+
+    #bg, #ptrn {
+        position: absolute;
+        top: -50%;
+    }
+
+    #image {
+        position: absolute;
+        left: 85px;
+        height: 40%;
+        top: -55%;
+        border-radius: 20%;
+        padding-bottom: 1.5%;
+        transition: transform 0.3s ease;
+    }
+
+    #image:hover {
+        transform: scale(1.05);
+    }
+
+    footer {
+        margin-top: 35%;
+        height: 190%;
+        width: 120%;
+        display: block;
+        background-color: rgb(22, 26, 87);
+    }
+
+    #text {
+        text-align: center;
+    }
+
+    #text h1 {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    #exptr, #bulbs, #hrs {
+        padding: 10%;
+        text-align: center;
+    }
+
+    #exptr h3, #bulbs h3, #hrs h3 {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    #expt, #bulb, #hhrs {
+        height: 18%;
+        width: 18%;
+        padding: 3%;
+        object-fit: contain;
+        border-radius: 30%;
+        margin-bottom: 7%;
+        transition: background-color 0.3s ease;
+    }
+
+    #expt {
+        background-color: aqua;
+    }
+
+    #expt:hover {
+        background-color: #00d9d9;
+    }
+
+    #bulb {
+        background-color: rgb(255, 60, 0);
+    }
+
+    #bulb:hover {
+        background-color: #ff2a00;
+    }
+
+    #hhrs {
+        background-color: purple;
+    }
+
+    #hhrs:hover {
+        background-color: #a020f0;
+    }
+
+    #orange {
+        position: absolute;
+        top: 60%;
+        height: 30px;
+        width: 30px;
+        left: 30%;
+    }
+
+    #green {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 135%;
+        left: 25%;
+    }
+
+    #curve {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 150%;
+        left: 75%;
+    }
+
+    #circle {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        left: 95%;
+        top: 135%;
+    }
+}
+
+
+@media only screen and (max-width: 414px) {
+    nav {
+        margin: 5%;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        margin-right: -90px;
+    }
+
+    #menu-icon, #user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #user {
+        border-radius: 50%;
+        margin-right: -20%;
+    }
+
+    nav h3, nav button {
+        display: none;
+    }
+
+    section {
+        height: 140%;
+        width: 100%;
+        display: block;
+    }
+
+    #section-left {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    #section-left h1 {
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-bottom: 8%;
+    }
+
+    #section-left h2 {
+        padding-left: 2%;
+        border-left: 3px solid black;
+        margin: 3%;
+    }
+
+    #button {
+        margin-top: 150%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 25%;
+    }
+
+    #section-left button {
+        padding: 4% 8%;
+        margin-top: 62%;
+        font-size: 16px;
+        background-color: #fa7203;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #section-left button:hover {
+        background-color: #555;
+    }
+
+    #section-right {
+        margin-top: 15%;
+        height: 100%;
+        width: 100%;
+        padding: 5%;
+        position: relative;
+    }
+
+    #bg, #ptrn {
+        position: absolute;
+        top: -60%;
+    }
+
+    #image {
+        position: absolute;
+        left: 95px;
+        height: 35%;
+        top: -60%;
+        border-radius: 20%;
+        padding-bottom: 1.5%;
+        transition: transform 0.3s ease;
+    }
+
+    #image:hover {
+        transform: scale(1.05);
+    }
+
+    footer {
+        margin-top: 40%;
+        height: 200%;
+        width: 130%;
+        display: block;
+        background-color: rgb(22, 26, 87);
+    }
+
+    #text {
+        text-align: center;
+    }
+
+    #text h1 {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    #exptr, #bulbs, #hrs {
+        padding: 10%;
+        text-align: center;
+    }
+
+    #exptr h3, #bulbs h3, #hrs h3 {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    #expt, #bulb, #hhrs {
+        height: 20%;
+        width: 20%;
+        padding: 3%;
+        object-fit: contain;
+        border-radius: 30%;
+        margin-bottom: 7%;
+        transition: background-color 0.3s ease;
+    }
+
+    #expt {
+        background-color: aqua;
+    }
+
+    #expt:hover {
+        background-color: #00d9d9;
+    }
+
+    #bulb {
+        background-color: rgb(255, 60, 0);
+    }
+
+    #bulb:hover {
+        background-color: #ff2a00;
+    }
+
+    #hhrs {
+        background-color: purple;
+    }
+
+    #hhrs:hover {
+        background-color: #a020f0;
+    }
+
+    #orange {
+        position: absolute;
+        top: 65%;
+        height: 30px;
+        width: 30px;
+        left: 35%;
+    }
+
+    #green {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 130%;
+        left: 25%;
+    }
+
+    #curve {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 150%;
+        left: 80%;
+    }
+
+    #circle {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        left: 100%;
+        top: 130%;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    nav {
+        margin: 5%;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        margin-right: -110px;
+    }
+
+    #menu-icon, #user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #user {
+        border-radius: 50%;
+        margin-right: -30%;
+    }
+
+    nav h3, nav button {
+        display: none;
+    }
+
+    section {
+        height: 150%;
+        width: 100%;
+        display: block;
+    }
+
+    #section-left {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    #section-left h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-bottom: 10%;
+    }
+
+    #section-left h2 {
+        padding-left: 2%;
+        border-left: 3px solid black;
+        margin: 3%;
+    }
+
+    #button {
+        margin-top: 170%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+    }
+
+    #section-left button {
+        padding: 5% 10%;
+        margin: 2%;
+        font-size: 18.11px;
+        background-color: #fa7203;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #section-left button:hover {
+        background-color: #555;
+    }
+
+    #section-right {
+        margin-top: 19%;
+        height: 100%;
+        width: 100%;
+        padding: 5%;
+        position: relative;
+    }
+
+    #bg {
+        position: absolute;
+        top: -60%;
+    }
+
+    #ptrn {
+        position: absolute;
+        top: -60%;
+        left: 0;
+    }
+
+    #image {
+        position: absolute;
+        left: 105px;
+        height: 40%;
+        top: -55%;
+        border-radius: 20%;
+        padding-bottom: 1.5%;
+        transition: transform 0.3s ease;
+    }
+
+    #image:hover {
+        transform: scale(1.05);
+    }
+
+    footer {
+        margin-top: 47%;
+        height: 250%;
+        width: 150%;
+        display: block;
+        background-color: rgb(22, 26, 87);
+    }
+
+    #text {
+        text-align: center;
+    }
+
+    #text h1 {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    #exptr, #bulbs, #hrs {
+        padding: 10%;
+        text-align: center;
+    }
+
+    #exptr h3, #bulbs h3, #hrs h3 {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    #expt, #bulb, #hhrs {
+        height: 15%;
+        width: 15%;
+        padding: 3%;
+        object-fit: contain;
+        border-radius: 30%;
+        margin-bottom: 7%;
+        transition: background-color 0.3s ease;
+    }
+
+    #expt {
+        background-color: aqua;
+    }
+
+    #expt:hover {
+        background-color: #00d9d9;
+    }
+
+    #bulb {
+        background-color: rgb(255, 60, 0);
+    }
+
+    #bulb:hover {
+        background-color: #ff2a00;
+    }
+
+    #hhrs {
+        background-color: purple;
+    }
+
+    #hhrs:hover {
+        background-color: #a020f0;
+    }
+
+    #orange {
+        position: absolute;
+        top: 80%;
+        height: 30px;
+        width: 30px;
+        left: 30%;
+    }
+
+    #green {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 155%;
+        left: 20%;
+    }
+
+    #curve {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 177%;
+        left: 85%;
+    }
+
+    #circle {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        left: 105%;
+        top: 155%;
+    }
+}
